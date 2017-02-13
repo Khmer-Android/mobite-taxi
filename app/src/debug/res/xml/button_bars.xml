@@ -1,0 +1,24 @@
+<tabs>
+    <tab
+        id="@+id/tab_button_taxi"
+        icon="@drawable/tab_icon_angkorcab_taxi"
+
+        title="" />
+    <tab
+        id="@+id/tab_button_car"
+        icon="@drawable/tab_icon_angkorcab_car"
+
+        title="" />
+
+    <tab
+        id="@+id/tab_button_tuktuk"
+        icon="@drawable/tab_icon_angkorcab_tuktuk"
+
+        title="" />
+
+    <tab
+        id="@+id/tab_button_moto"
+        icon="@drawable/tab_icon_angkorcab_moto"
+
+        title="" />
+</tabs>

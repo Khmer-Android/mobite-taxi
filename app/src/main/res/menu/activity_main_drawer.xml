@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/home"
+            android:title="@string/item_home" />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/profile"
+            android:title="@string/item_one" />
+      <item
+            android:id="@+id/rides"
+            android:icon="@drawable/rides"
+            android:title="@string/item_two" />
+         <item
+                android:id="@+id/manage_taxi"
+                android:icon="@drawable/rides"
+                android:title="@string/item_taxi" />
+        <!--
+           <item
+               android:id="@+id/refer_friend"
+               android:icon="@drawable/share_friend"
+               android:title="@string/item_seven" />-->
+        <item
+            android:id="@+id/help"
+            android:icon="@drawable/help"
+            android:title="@string/item_five" />
+
+        <item
+            android:id="@+id/sign_out"
+            android:icon="@drawable/signout"
+            android:title="@string/item_six" />
+    </group>
+</menu>

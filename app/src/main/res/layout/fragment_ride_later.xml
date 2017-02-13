@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#fff"
+                android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8.6"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:weightSum="11">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="9"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    android:orientation="vertical"
+                    android:weightSum="8">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2"/>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_weight="0.8"
+                        android:background="#fff"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/source"/>
+
+                        <TextView
+                            android:id="@+id/current_loc_RideLater"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="9"
+                            android:gravity="center_vertical|start"
+                            android:paddingLeft="8dip"
+                            android:text="@string/current_location"
+                            android:textColor="#000"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2"/>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_weight="0.8"
+                        android:background="#fff"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/cab"/>
+
+                        <TextView
+                            android:id="@+id/cab_type_RideLater"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="9"
+                            android:background="#fff"
+                            android:gravity="center_vertical|start"
+                            android:paddingLeft="8dip"
+                            android:text="@string/cabtype"
+                            android:textColor="#000"
+
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2"/>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_weight="0.8"
+                        android:background="#fff"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/destination"/>
+
+                        <TextView
+                            android:id="@+id/destination_RideLater"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="9"
+                            android:background="#fff"
+                            android:gravity="center_vertical|start"
+                            android:paddingLeft="8dip"
+                            android:text="@string/destination"
+                            android:textColor="#000"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.2"/>
+
+                    <LinearLayout
+                        android:id="@+id/fare_distance_layout_RL"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.7"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="10">
+
+
+                        <LinearLayout
+                            android:id="@+id/distance_layout"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/distance_RideLater"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="center_vertical"
+                                android:text="990 mi "
+                                android:textColor="@color/colorGreenText"
+                                android:textSize="16sp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:text="@string/distance"
+                                android:textColor="#000"
+                                android:textSize="12sp"
+                                android:textStyle="italic"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/fare_layout_RL"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/fare_RideLater"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="center_vertical"
+                                android:text="$15"
+                                android:textColor="@color/colorGreenText"
+                                android:textSize="16sp"
+                                android:textStyle="bold"/>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center_vertical"
+                                android:text="@string/permile"
+                                android:textColor="#000"
+                                android:textSize="12sp"
+                                android:textStyle="italic"/>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+
+                        android:id="@+id/cab_details_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="4"
+                            android:orientation="vertical"
+                            android:weightSum="12">
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:gravity="center_vertical|start"
+                                android:text="@string/pickup_time"
+                                android:textColor="#000"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:gravity="center_vertical|start"
+                                android:text="@string/pickup_date"
+                                android:textColor="#000"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:gravity="center_vertical|start"
+                                android:text="@string/driver_name"
+                                android:textColor="#000"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:gravity="center_vertical|start"
+                                android:text="@string/contact"
+                                android:textColor="#000"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:gravity="center_vertical|start"
+                                android:text="@string/cab_num"
+                                android:textColor="#000"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:gravity="center_vertical|start"
+                                android:text="@string/fare_approx"
+                                android:textColor="#000"
+                                android:textSize="12sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="6"
+                            android:orientation="vertical"
+                            android:weightSum="12">
+
+                            <TextView
+                                android:id="@+id/pickup_time_RL"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:gravity="center_vertical|start"
+                                android:text="05:55 PM"
+                                android:textColor="@color/colorGreenText"
+                                android:textSize="18sp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/pick_up_date_RL"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:gravity="center_vertical|start"
+                                android:text="04/02/2014"
+                                android:textColor="@color/colorGreenText"
+                                android:textSize="18sp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/driver_name_RideLater"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:gravity="center_vertical|start"
+                                android:text="Mr. XYZ"
+                                android:textColor="@color/colorGreenText"
+                                android:textSize="18sp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/driver_contact_num_RideLater"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:gravity="center_vertical|start"
+                                android:text="+41123456789"
+                                android:textColor="@color/colorGreenText"
+                                android:textSize="18sp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/Cab_num_RideLater"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:gravity="center_vertical|start"
+                                android:text="US 123456AZ"
+                                android:textColor="@color/colorGreenText"
+                                android:textSize="18sp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/fare_approx_RL"
+                                android:layout_width="fill_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:gravity="center_vertical|start"
+                                android:text="US 123456AZ"
+                                android:textColor="@color/colorGreenText"
+                                android:textSize="18sp"
+                                android:textStyle="bold"/>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/confim_button_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <ImageButton
+                android:id="@+id/confirm_img_user_rl"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:src="@drawable/confirm"
+
+                />
+
+            <ImageButton
+                android:id="@+id/reject_img_user_rl"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+
+                android:src="@drawable/reject"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/booknow_button_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.4"
+            android:background="#fff"
+            android:gravity="center_horizontal"
+            android:visibility="visible">
+
+            <ImageButton
+
+                android:id="@+id/booknowbutton_RL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:src="@drawable/book_now"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

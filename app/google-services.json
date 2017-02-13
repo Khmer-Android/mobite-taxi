@@ -1,0 +1,57 @@
+{
+  "project_info": {
+
+    "project_number": "639037316367",
+    "firebase_url": "https://taxi-ddeae.firebaseio.com",
+    "project_id": "taxi-ddeae",
+    "storage_bucket": "taxi-ddeae.appspot.com"
+
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639037316367:android:7f5617c388242bf6",
+        "android_client_info": {
+          "package_name": "com.angkorcab.taxi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "639037316367-uosmsh22ie84rnf7t6h46fk3t20h046i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.angkorcab.taxi",
+            "certificate_hash": "84476A44BF3CF524553EEA4D349B78D5ADA03EF9"
+          }
+        },
+        {
+          "client_id": "639037316367-2katu1bnou2vdp3gtetvod6e79j5pfo7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxy3OnCJ_uGE3YwDA3bV8wz3oqO4PtWJY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "639037316367-2katu1bnou2vdp3gtetvod6e79j5pfo7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
